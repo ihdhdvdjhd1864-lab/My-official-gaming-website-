@@ -1,0 +1,228 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+.header {
+  background-color: #0171f9;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px 50px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  transition: 0.5s;
+}
+a:hover {
+  background-color: #1768cb3b;
+  border-radius: 30px;
+}
+
+.logo {
+  width: 100px;
+}
+.button {
+  background-color: rgb(236, 131, 12);
+  border: none;
+  border-radius: 20px;
+  width: 90px;
+  height: 40px;
+  padding: 10px;
+}
+
+.button:hover {
+  background-color: rgba(20, 210, 58, 0.588);
+}
+.bodyer {
+  background-color: #0171f9;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 50px;
+  align-items: center;
+  color: white;
+  border-radius: 0px 0px 35px 35px;
+}
+
+.speech {
+  width: 400px;
+}
+
+.speech p {
+  color: black;
+}
+
+.search input {
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  height: 30px;
+}
+
+.search .button {
+  position: absolute;
+  left: 180px;
+  height: 32px;
+}
+
+.bodyer-img img {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.bodyer2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.bodyer2 p {
+  color: rgb(236, 131, 12);
+}
+.bodyer2 h2 {
+  margin: 0px;
+}
+
+.Gmpo {
+  width: 300px;
+  background-color: rgb(198, 198, 198);
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.496);
+  border-radius: 10px;
+  margin: 10px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.Gametext > a img {
+  width: 50px;
+}
+
+.Gametext > a img :hover {
+  background-color: black;
+}
+
+.Gametext {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kimo {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* ================= تحسين عام ================= */
+
+* {
+  box-sizing: border-box;
+}
+
+.bodyer,
+.header {
+  gap: 15px;
+}
+
+/* السيرش يبقى مظبوط */
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.search input {
+  padding: 5px 10px;
+  width: 200px;
+}
+
+.search .button {
+  position: static; /* مهم */
+}
+
+.speech {
+  max-width: 400px;
+  width: 100%;
+}
+
+.bodyer-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.kimo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Gametext {
+  margin: 0 10px;
+}
+
+/* ================= موبايل ================= */
+
+@media (max-width: 768px) {
+  .logo {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .header {
+    text-align: center;
+  }
+  a {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+
+  .bodyer {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .speech p {
+    font-size: 14px;
+  }
+
+  .search {
+    flex-direction: column;
+  }
+
+  .search input {
+    width: 100%;
+  }
+
+  .search .button {
+    width: 100%;
+  }
+
+  .bodyer-img img {
+    width: 90%;
+    margin: auto;
+  }
+
+  /* الكروت */
+  .kimo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    justify-content: center;
+    gap: 20px;
+  }
+  .imgcamll {
+    width: 100%;
+  }
+}
+
+/* ================= تابلت ================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .kimo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
