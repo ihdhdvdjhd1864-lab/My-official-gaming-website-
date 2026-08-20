@@ -319,7 +319,8 @@ img {
 .Gmpo {
   background: #fff;
   border-radius: 22px;
-  height: 500px;
+  width: 400px;
+  height: 350px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -344,7 +345,7 @@ img {
 
 .imgcamll {
   width: 100%;
-  height: 400px;
+  height: 50%;
 
   object-fit: cover;
   object-position: top;
