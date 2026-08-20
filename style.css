@@ -319,7 +319,7 @@ img {
 .Gmpo {
   background: #fff;
   border-radius: 22px;
-  width: 400px;
+  width: 350px;
   height: 350px;
   overflow: hidden;
   display: flex;
@@ -331,6 +331,7 @@ img {
   transition: 0.4s ease;
 
   cursor: pointer;
+  margin: auto;
 }
 
 .Gmpo:hover {
